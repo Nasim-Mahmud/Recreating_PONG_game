@@ -1,0 +1,14 @@
+1. Create the screen
+2.Create and move a paddle
+3. Create another paddle
+4. Create a ball and move around the screen
+5. Detecting collision with the wall and bounce
+6. Detect collision with the paddle
+7. Detect when paddle misses the ball
+8. Keep score
+
+
+1. dividing the screen in the y axis
+2. Making two bat in the both side of the screen which can only move vertically
+3. make the ball
+4. Make the scoreboard
