@@ -17,4 +17,4 @@ class Paddle:
         dino.penup()
         dino.fillcolor("white")
         dino.goto(pos)
-        self.ggpaddle.append()
+        self.ggpaddle.append(dino)
