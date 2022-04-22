@@ -1,8 +1,10 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
 # import time
 
 screen = Screen()
+ball = Ball()
 screen.tracer(0)
 
 screen.setup(width=800, height=600)
