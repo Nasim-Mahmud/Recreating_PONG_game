@@ -1,10 +1,12 @@
 from turtle import Turtle
 
 
-class Ball:
-    def __init__(self):
-        self.create_ball()
+def create_ball():
+    tim = Turtle("circle")
+    tim.color("white")
 
-    def create_ball(self):
-        tim = Turtle("circle")
-        tim.color("white")
+
+class Ball:
+
+    def __init__(self):
+        create_ball()
