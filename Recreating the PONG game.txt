@@ -1,5 +1,5 @@
 Todo:1. Create the screen
-Todo:2.Create and move a paddle
+Todo:2. Create and move a paddle
 Todo:3. Create another paddle
 Todo:4. Create a ball and move around the screen
 Todo:5. Detecting collision with the wall and bounce
