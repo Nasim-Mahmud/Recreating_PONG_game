@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 from paddle import Paddle
 # import time
 
@@ -12,4 +12,5 @@ game_is_on = True
 while game_is_on:
     screen.update()
     paddle = Paddle()
+
 screen.exitonclick()
