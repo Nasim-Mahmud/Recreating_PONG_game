@@ -18,25 +18,32 @@ class Paddle:
 
     def create_paddle(self):
         for position in turtle1_position:
-            self.add_paddle(position)
+            self.add_paddle_01(position)
         for position in turtle2_position:
-            self.add_paddle(position)
+            self.add_paddle_02(position)
 
-    def add_paddle(self, pos):
+    def add_paddle_01(self, pos):
         dino = Turtle("square")
         dino.penup()
         dino.fillcolor("white")
         dino.goto(pos)
         self.ggpaddle01.append(dino)
+
+    def add_paddle_02(self, pos):
+        dino = Turtle("square")
+        dino.penup()
+        dino.fillcolor("white")
+        dino.goto(pos)
         self.ggpaddle02.append(dino)
 
-    def move(self):
+    def move_01(self):
         for n in range(len(self.ggpaddle01)-1, 0, -1):
             x_pos = self.ggpaddle01[n-1].xcor()
             y_pos = self.ggpaddle01[n-1].ycor()
             self.ggpaddle01[n].goto(x_pos, y_pos)
         self.head01.forward(MOVE)
 
+    def move_02(self):
         for n in range(len(self.ggpaddle02)-1, 0, -1):
             x_pos = self.ggpaddle02[n-1].xcor()
             y_pos = self.ggpaddle02[n-1].ycor()
@@ -45,16 +52,16 @@ class Paddle:
 
     def up_arrow(self):
         self.head01.setheading(UP)
-        self.move()
+        self.move_01()
 
     def up_alph(self):
         self.head02.setheading(UP)
-        self.move()
+        self.move_02()
 
     def down_arrow(self):
         self.head01.setheading(DOWN)
-        self.move()
+        self.move_01()
 
     def down_alph(self):
         self.head02.setheading(DOWN)
-        self.move()
+        self.move_02()
