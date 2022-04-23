@@ -3,6 +3,8 @@ from turtle import Turtle
 turtle1_position = [(300, 0), (300, 20), (300, 40)]
 turtle2_position = [(-300, 0), (-300, 20), (-300, 40)]
 
+UP = 90
+
 class Paddle:
     def __init__(self):
         self.ggpaddle = []
@@ -28,3 +30,6 @@ class Paddle:
             y_pos = self.ggpaddle[n - 1].ycor()
             self.ggpaddle[n].goto(x_pos, y_pos)
         self.head.forward(90)
+
+    def Up(self):
+        self.head.setheading(UP)
