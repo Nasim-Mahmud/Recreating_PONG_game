@@ -13,8 +13,10 @@ ball = Ball()
 screen.tracer(0)
 
 screen.listen()
-screen.onkey(paddle.up, "Up")
-screen.onkey(paddle.down, "Down")
+screen.onkey(paddle.up_arrow, "Up")
+screen.onkey(paddle.down_arrow, "Down")
+screen.onkey(paddle.up_alph, "w")
+screen.onkey(paddle.down_alph, "s")
 
 game_is_on = True
 while game_is_on:
