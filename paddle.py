@@ -5,6 +5,7 @@ turtle2_position = [(-300, 0), (-300, 20), (-300, 40)]
 
 UP = 90
 MOVE = 20
+DOWN = 270
 
 
 class Paddle:
@@ -27,11 +28,16 @@ class Paddle:
         self.ggpaddle.append(dino)
 
     def move(self):
-        for n in range(len(self.ggpaddle) - 1, 0, -1):
-            x_pos = self.ggpaddle[n - 1].xcor()
-            y_pos = self.ggpaddle[n - 1].ycor()
+        for n in range(len(self.ggpaddle)-1, 0, -1):
+            x_pos = self.ggpaddle[n-1].xcor()
+            y_pos = self.ggpaddle[n-1].ycor()
             self.ggpaddle[n].goto(x_pos, y_pos)
         self.head.forward(MOVE)
 
     def up(self):
         self.head.setheading(UP)
+        self.move()
+
+    def down(self):
+        self.head.setheading(DOWN)
+        self.move()
