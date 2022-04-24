@@ -21,6 +21,7 @@ class Paddle:
         for position in pos:
             paddle(position)
 
+
     def add_paddle_01(self, pos):
         dino = Turtle("square")
         dino.penup()
