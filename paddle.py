@@ -21,7 +21,6 @@ class Paddle:
         for position in pos:
             paddle(position)
 
-
     def add_paddle_01(self, pos):
         dino = Turtle("square")
         dino.penup()
@@ -37,9 +36,9 @@ class Paddle:
         self.ggpaddle02.append(dino)
 
     def move(self, paddles, head):
-        for n in range(len(paddles)-1, 0, -1):
-            x_pos = paddles[n-1].xcor()
-            y_pos = paddles[n-1].ycor()
+        for n in range(len(paddles) - 1, 0, -1):
+            x_pos = paddles[n - 1].xcor()
+            y_pos = paddles[n - 1].ycor()
             paddles[n].goto(x_pos, y_pos)
         head.forward(MOVE)
 
