@@ -12,15 +12,14 @@ class Paddle:
     def __init__(self):
         self.ggpaddle01 = []
         self.ggpaddle02 = []
-        self.create_paddle()
+        self.create_paddle(self.add_paddle_01, turtle1_position)
+        self.create_paddle(self.add_paddle_02, turtle2_position)
         self.head01 = self.ggpaddle01[0]
         self.head02 = self.ggpaddle02[0]
 
-    def create_paddle(self):
-        for position in turtle1_position:
-            self.add_paddle_01(position)
-        for position in turtle2_position:
-            self.add_paddle_02(position)
+    def create_paddle(self, paddle, pos):
+        for position in pos:
+            paddle(position)
 
     def add_paddle_01(self, pos):
         dino = Turtle("square")
