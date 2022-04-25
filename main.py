@@ -14,6 +14,7 @@ paddle.goto(350, 0)
 
 screen.tracer(0)
 
+
 def go_up():
     new_y = paddle.ycor() + 20
     paddle.goto(paddle.xcor(), new_y)
