@@ -8,13 +8,8 @@ class Ball(Turtle):
         self.shape("circle")
         self.color("white")
         self.penup()
-        self.goto(self.position())
 
-    def position(self):
-        x_cor = 0
-        y_cor = 0
-        is_on = True
-        while is_on:
-            x_cor += 20
-            y_cor += 20
-            return x_cor, y_cor
+    def move(self):
+        new_x = self.xcor() + 10
+        new_y = self.ycor() + 10
+        self.goto(new_x, new_y)
