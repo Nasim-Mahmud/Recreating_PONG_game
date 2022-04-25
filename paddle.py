@@ -1,7 +1,7 @@
 from turtle import Turtle
 
-turtle1_position = [(300, 0), (300, 20), (300, 40)]
-turtle2_position = [(-300, 0), (-300, 20), (-300, 40)]
+turtle1_position = [(350, 0), (350, 20), (350, 40)]
+turtle2_position = [(-350, 0), (-350, 20), (-350, 40)]
 
 UP = 90
 MOVE = 20
