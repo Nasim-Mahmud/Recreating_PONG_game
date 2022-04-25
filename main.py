@@ -1,25 +1,45 @@
 import time
-from turtle import Screen
-from paddle import Paddle
-from ball import Ball
+from turtle import Screen, Turtle
+
+# from paddle import Paddle
+# from ball import Ball
 
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong")
-paddle = Paddle()
-ball = Ball()
+
+paddle = Turtle()
+paddle.shape("square")
+paddle.color("white")
+paddle.shapesize(stretch_wid=5, stretch_len=1)
+paddle.penup()
+paddle.goto(350, 0)
+# paddle = Paddle()
+# ball = Ball()
 screen.tracer(0)
 
-screen.listen()
-screen.onkey(paddle.up_arrow, "Up")
-screen.onkey(paddle.down_arrow, "Down")
-screen.onkey(paddle.up_alph, "w")
-screen.onkey(paddle.down_alph, "s")
 
-game_is_on = True
-while game_is_on:
-    screen.update()
-    time.sleep(0.1)
+def go_up():
+    new_y = paddle.ycor() + 20
+    paddle.goto(paddle.xcor(), new_y)
+
+def go_down():
+    new_y = paddle.ycor() - 20
+    paddle.goto(paddle.xcor(), new_y)
+
+
+screen.listen()
+screen.onkey(go_up, "Up")
+screen.onkey(go_down, "Down")
+# screen.onkey(paddle.up_arrow, "Up")
+# screen.onkey(paddle.down_arrow, "Down")
+# screen.onkey(paddle.up_alph, "w")
+# screen.onkey(paddle.down_alph, "s")
+#
+# game_is_on = True
+# while game_is_on:
+#     screen.update()
+#     time.sleep(0.1)
 
 screen.exitonclick()
