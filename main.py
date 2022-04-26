@@ -14,7 +14,6 @@ l_paddle = Paddle((-350, 0))
 
 ball = Ball()
 
-
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
 screen.onkey(r_paddle.go_down, "Down")
@@ -28,7 +27,5 @@ while game_is_on:
 
     if ball.ycor() > 300 or ball.ycor() < -300:
         ball.bounce()
-
-
 
 screen.exitonclick()
