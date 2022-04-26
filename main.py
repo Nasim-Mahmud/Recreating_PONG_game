@@ -25,9 +25,10 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    if ball.ycor() > 280:
-        ball.new_cord()
-        # game_is_on = False
+
+    if ball.ycor() > 300 or ball.ycor() < -300:
+
+
 
 
 screen.exitonclick()
