@@ -13,3 +13,8 @@ class Ball(Turtle):
         new_x = self.xcor() + 10
         new_y = self.ycor() + 10
         self.goto(new_x, new_y)
+
+    def new_cord(self):
+        new_y = self.ycor() - 10
+        new_x = self.xcor()
+        self.goto(new_x, new_y)
