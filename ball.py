@@ -15,6 +15,6 @@ class Ball(Turtle):
         self.goto(new_x, new_y)
 
     def new_cord(self):
-        new_y = self.ycor() - 10
+        new_y = self.ycor() - 20
         new_x = self.xcor()
         self.goto(new_x, new_y)
