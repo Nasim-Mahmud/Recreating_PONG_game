@@ -16,6 +16,10 @@ class Ball(Turtle):
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
+    def increse_speed(self):
+        self.x_move += 5
+        self.y_move += 5
+
     def bounce_y(self):
         # self.x_move *= -1
         self.y_move *= -1
