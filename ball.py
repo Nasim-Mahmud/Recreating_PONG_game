@@ -25,3 +25,4 @@ class Ball(Turtle):
 
     def ball_reset(self):
         self.goto(0, 0)
+        # self.x_move *= -1
