@@ -7,3 +7,6 @@ class Scoreboard(Turtle):
         self.color("white")
         self.penup()
         self.ht()
+        self.l_score = 0
+        self.r_score = 0
+        self.write(self.l_score, align="center", font=("Courier", 80, "normal"))
