@@ -25,6 +25,7 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     ball.move()
+
     if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce_y()
 
@@ -33,5 +34,7 @@ while game_is_on:
         ball.bounce_x()
     if ball.distance(l_paddle) < 50 and ball.xcor() > -320:
         ball.bounce_x()
-
+#     Detect miss
+    if ball.distance(r_paddle) > 50 and ball.xcor() > 320:
+        ball.reset()
 screen.exitonclick()
