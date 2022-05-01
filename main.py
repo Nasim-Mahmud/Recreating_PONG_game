@@ -26,6 +26,7 @@ game_is_on = False
 
 if level:
     game_is_on = True
+    print(type(level))
 
 while game_is_on:
     time.sleep(ball.move_speed)
@@ -45,7 +46,7 @@ while game_is_on:
         ball.reset_pos()
 
         scoreboard.update_l_point()
-        if scoreboard.l_score == level:
+        if scoreboard.l_score == int(level):
             print("Lest player wins")
             game_is_on = False
 
