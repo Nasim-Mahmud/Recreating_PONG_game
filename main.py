@@ -32,6 +32,8 @@ game_is_on = False
 
 if int(level) > 0:
     game_is_on = True
+else:
+    game_is_on = False
 
 while game_is_on:
     time.sleep(ball.move_speed)
