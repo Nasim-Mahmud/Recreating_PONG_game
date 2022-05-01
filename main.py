@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Screen, Turtle
 from paddle import Paddle
 from ball import Ball
 from scoreboard import Scoreboard
@@ -16,6 +16,9 @@ l_paddle = Paddle((-350, 0))
 
 ball = Ball()
 scoreboard = Scoreboard()
+
+game_over = Turtle()
+
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
@@ -55,7 +58,7 @@ while game_is_on:
         scoreboard.update_r_point()
 
     if scoreboard.l_score == int(level):
-
+        game_over.write("Game Over")
         game_is_on = False
     if scoreboard.r_score == int(level):
         print("Right side player wins")
