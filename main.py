@@ -55,7 +55,7 @@ while game_is_on:
         scoreboard.update_r_point()
 
     if scoreboard.l_score == int(level):
-        print("Left side player wins")
+
         game_is_on = False
     if scoreboard.r_score == int(level):
         print("Right side player wins")
