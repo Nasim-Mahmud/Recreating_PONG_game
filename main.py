@@ -9,6 +9,7 @@ screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong")
 level = screen.textinput(title= " ", prompt= "What will be the highest score?")
+
 screen.tracer(0)
 
 r_paddle = Paddle((350, 0))
