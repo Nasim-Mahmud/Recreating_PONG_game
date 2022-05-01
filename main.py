@@ -45,12 +45,17 @@ while game_is_on:
         ball.reset_pos()
 
         scoreboard.update_l_point()
-        print(scoreboard.l_score)
+        if scoreboard.l_score == level:
+            print("Lest player wins")
+            game_is_on = False
 
     #     Detect l_paddle misses
     if ball.xcor() < -380:
         ball.reset_pos()
 
         scoreboard.update_r_point()
+        if scoreboard.l_score == level:
+            print("Lest player wins")
+            game_is_on = False
 
 screen.exitonclick()
