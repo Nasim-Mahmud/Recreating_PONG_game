@@ -18,7 +18,9 @@ ball = Ball()
 scoreboard = Scoreboard()
 
 game_over = Turtle()
-
+game_over.color("White")
+game_over.penup()
+game_over.ht()
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
@@ -58,10 +60,12 @@ while game_is_on:
         scoreboard.update_r_point()
 
     if scoreboard.l_score == int(level):
-        game_over.write("Game Over")
+        game_over.write("Game Over", align="center", font=("Courier", 20, "bold"))
+        game_over.write("Left side player wins", align="center", font=("Courier", 20, "bold"))
         game_is_on = False
     if scoreboard.r_score == int(level):
-        print("Right side player wins")
+        game_over.write("Game Over", align="center", font=("Courier", 20, "bold"))
+        game_over.write("Right side player wins", align="center", font=("Courier", 20, "bold"))
         game_is_on = False
 
 screen.exitonclick()
