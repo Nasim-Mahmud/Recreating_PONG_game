@@ -61,10 +61,12 @@ while game_is_on:
 
     if scoreboard.l_score == int(level):
         game_over.write("Game Over", align="center", font=("Courier", 20, "bold"))
+        game_over.goto(0, -50)
         game_over.write("Left side player wins", align="center", font=("Courier", 20, "bold"))
         game_is_on = False
     if scoreboard.r_score == int(level):
         game_over.write("Game Over", align="center", font=("Courier", 20, "bold"))
+        game_over.goto(0, -50)
         game_over.write("Right side player wins", align="center", font=("Courier", 20, "bold"))
         game_is_on = False
 
