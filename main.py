@@ -8,7 +8,7 @@ screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong")
-level = screen.textinput(title= "Score", prompt= "What will be the highest score?")
+level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
 screen.tracer(0)
 
 r_paddle = Paddle((350, 0))
@@ -51,7 +51,6 @@ while game_is_on:
         ball.reset_pos()
 
         scoreboard.update_l_point()
-
 
     #     Detect l_paddle misses
     if ball.xcor() < -380:
