@@ -9,6 +9,7 @@ screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong")
 level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
+
 screen.tracer(0)
 
 r_paddle = Paddle((350, 0))
@@ -29,9 +30,8 @@ screen.onkey(l_paddle.go_up, "w")
 screen.onkey(l_paddle.go_down, "s")
 game_is_on = False
 
-if level:
+if int(level) > 0:
     game_is_on = True
-    print(type(level))
 
 while game_is_on:
     time.sleep(ball.move_speed)
