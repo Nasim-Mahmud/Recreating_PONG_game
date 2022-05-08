@@ -36,8 +36,15 @@ game_is_on = False
 #     level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
 #     game_is_on = False
 
-while int(level) != 0:
-    game_is_on
+ask = True
+while ask:
+    if int(level) > 0:
+        game_is_on = True
+        ask = False
+    else:
+        level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
+        game_is_on = False
+        ask = True
 
 while game_is_on:
     time.sleep(ball.move_speed)
