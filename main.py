@@ -50,7 +50,7 @@ while game_is_on:
         if int(level) > 0:
             ask = False
         else:
-            level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
+
             ask = True
     time.sleep(ball.move_speed)
     screen.update()
