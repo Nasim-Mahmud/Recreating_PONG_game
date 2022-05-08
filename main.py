@@ -37,7 +37,6 @@ while ask:
     if int(level) > 0:
         ask = False
     else:
-
         ask = True
 
 while game_is_on:
