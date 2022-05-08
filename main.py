@@ -51,7 +51,6 @@ while game_is_on:
         if int(level) > 0:
             ask = False
         else:
-
             ask = True
     time.sleep(ball.move_speed)
     screen.update()
