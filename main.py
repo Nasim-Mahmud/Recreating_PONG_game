@@ -33,6 +33,7 @@ game_is_on = False
 if int(level) > 0:
     game_is_on = True
 else:
+    level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
     game_is_on = False
 
 while game_is_on:
