@@ -30,11 +30,6 @@ screen.onkey(l_paddle.go_up, "w")
 screen.onkey(l_paddle.go_down, "s")
 game_is_on = True
 
-# if int(level) > 0:
-#     game_is_on = True
-# else:
-#     level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
-#     game_is_on = False
 
 ask = True
 while ask:
