@@ -8,3 +8,4 @@ A simple game we used to play in arcade. This is a multiplayer game, players can
 ## Play!
 ![2](https://user-images.githubusercontent.com/57942968/166459530-cea47214-e67e-4655-a048-ee85587d5f31.png)
 
+### NB: This game is still in beta version. Some minor error occurs if the player enters the highest score less than or equal to 0 more than once, then the paddles freezes. Working on it!
