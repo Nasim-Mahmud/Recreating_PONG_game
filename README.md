@@ -8,4 +8,4 @@ A simple game we used to play in arcade. This is a multiplayer game, players can
 ## Play!
 ![2](https://user-images.githubusercontent.com/57942968/166459530-cea47214-e67e-4655-a048-ee85587d5f31.png)
 
-### This game is still in its early stages of development. If the player enters the highest score that is less than or equal to 0 more than once, the paddles will freeze. I'm working on it.
+#### NB: This game is still in its early stages of development. If the player enters the highest score that is less than or equal to 0 more than once, the paddles will freeze. I'm working on it.
