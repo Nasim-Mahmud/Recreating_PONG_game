@@ -19,6 +19,7 @@ while ask:
         ask = False
     else:
         ask = True
+
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 
