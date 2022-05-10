@@ -10,7 +10,7 @@ screen.bgcolor("black")
 screen.title("Pong")
 
 screen.tracer(0)
-level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
+# level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
 
 # Setting up the highest score before starting the match
 ask = True
