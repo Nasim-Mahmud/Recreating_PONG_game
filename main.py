@@ -30,7 +30,7 @@ screen.onkey(l_paddle.go_up, "w")
 screen.onkey(l_paddle.go_down, "s")
 game_is_on = True
 
-
+# Setting up the highest score before starting the match
 ask = True
 while ask:
     level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
@@ -39,6 +39,7 @@ while ask:
     else:
         ask = True
 
+# Game mechanics
 while game_is_on:
     time.sleep(ball.move_speed)
     screen.update()
