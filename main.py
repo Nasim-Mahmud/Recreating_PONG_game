@@ -11,7 +11,7 @@ screen.title("Pong")
 
 
 screen.tracer(0)
-
+level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 
