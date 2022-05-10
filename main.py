@@ -12,6 +12,14 @@ screen.title("Pong")
 
 screen.tracer(0)
 level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
+
+# Setting up the highest score before starting the match
+ask = True
+while ask:
+    if int(level) > 0:
+        ask = False
+    else:
+        ask = True
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 
