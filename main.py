@@ -11,7 +11,6 @@ screen.title("Pong")
 
 screen.tracer(0)
 
-
 # Setting up the highest score before starting the match
 ask = True
 while ask:
