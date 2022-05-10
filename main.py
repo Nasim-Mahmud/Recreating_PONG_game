@@ -31,14 +31,6 @@ screen.onkey(l_paddle.go_down, "s")
 game_is_on = True
 
 
-# Setting up the highest score before starting the match
-ask = True
-while ask:
-    if int(level) > 0:
-        ask = False
-    else:
-        ask = True
-
 # Game mechanics
 while game_is_on:
     time.sleep(ball.move_speed)
