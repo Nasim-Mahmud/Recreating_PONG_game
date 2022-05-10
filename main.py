@@ -15,6 +15,7 @@ level = screen.textinput(title="Welcome to Pong!", prompt="What will be the high
 # Setting up the highest score before starting the match
 ask = True
 while ask:
+    level = screen.textinput(title="Welcome to Pong!", prompt="What will be the highest score?")
     if int(level) > 0:
         ask = False
     else:
@@ -35,7 +36,7 @@ screen.onkey(r_paddle.go_up, "Up")
 screen.onkey(r_paddle.go_down, "Down")
 screen.onkey(l_paddle.go_up, "w")
 screen.onkey(l_paddle.go_down, "s")
-
+game_is_on = True
 
 # Game mechanics
 while game_is_on:
